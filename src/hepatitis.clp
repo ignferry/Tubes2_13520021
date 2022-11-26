@@ -41,17 +41,11 @@
 
 (defrule anti-hbc-input2
 	(hbs-ag negative)
-	(anti-hbs positive)
+	(anti-hbs positive | negative)
 	=>
 	(printout t "anti-HBc? ")
 	(assert (anti-hbc (read))))
 
-(defrule anti-hbc-input3
-	(hbs-ag negative)
-	(anti-hbs negative)
-	=>
-	(printout t "anti-HBc? ")
-	(assert (anti-hbc (read))))
 
 	
 (defrule hepatitis_b_d_output
@@ -105,7 +99,7 @@
 	(anti-hbs positive)
 	(anti-hbc negative)
 	=>
-	(printout t "Hasil Prediksi = Vaccinated " crlf))
+	(printout t "Hasil Prediksi = Vaccitnated " crlf))
 
 (defrule unclear_output
 	(hbs-ag negative)
