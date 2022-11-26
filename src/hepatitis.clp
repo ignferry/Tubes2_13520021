@@ -99,7 +99,7 @@
 	(anti-hbs positive)
 	(anti-hbc negative)
 	=>
-	(printout t "Hasil Prediksi = Vaccitnated " crlf))
+	(printout t "Hasil Prediksi = Vaccinated " crlf))
 
 (defrule unclear_output
 	(hbs-ag negative)
